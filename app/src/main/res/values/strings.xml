@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MobileUp</string>
     <string name="toolbar_title">Список криптовалют</string>
+    <string name="title_toolbar">Список криптовалют</string>
+    <string name="usd">USD</string>
+    <string name="rub">RUB</string>
 </resources>
