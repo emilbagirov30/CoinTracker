@@ -10,4 +10,10 @@
     <color name="chip_text_color_default">#000000</color>
     <color name="chip_stroke_color">#B0B0B0</color>
     <color name="status_bar_color">#959595</color>
+    <color name="item_name_color">#525252</color>
+    <color name="item_symbol_color">#9B9B9B</color>
+    <color name="item_difference_plus"> #2A9D8F</color>
+    <color name="item_difference_minus">#EB5757</color>
+
+
 </resources>
