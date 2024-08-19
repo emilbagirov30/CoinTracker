@@ -8,6 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import java.text.NumberFormat
+import java.util.Locale
 
 class CryptoAdapter(
     private var cryptos: List<CryptoResponse>,
@@ -46,7 +48,8 @@ class CryptoAdapter(
 
 
             val currencySymbol = if (currency == "rub") "₽" else "$"
-            tvPrice.text = "$currencySymbol${crypto.currentPrice}"
+            val formattedPrice = NumberFormat.getNumberInstance(Locale.US).format(crypto.currentPrice)
+            tvPrice.text = "$currencySymbol${formattedPrice}"
 
 
             val diffPercentage = crypto.priceChangePercentage24h
