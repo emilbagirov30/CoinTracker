@@ -51,6 +51,7 @@ class CryptoListFragment : Fragment() {
         viewModel.cryptoList.observe(requireActivity()) { cryptos ->
             cryptoAdapter.updateData(cryptos, currentCurrency)
             MainActivity.loading.visibility = View.GONE
+            rvCryptoList.visibility = View.VISIBLE
         }
 
         viewModel.error.observe(requireActivity()) { errorMessage ->
@@ -75,6 +76,7 @@ class CryptoListFragment : Fragment() {
 
     private fun fetchCryptos(currency: String) {
         MainActivity.loading.visibility = View.VISIBLE
+        rvCryptoList.visibility = View.GONE
         viewModel.fetchCryptos(currency)
     }
 
