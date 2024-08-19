@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.ProgressBar
+import android.widget.RelativeLayout
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.ViewModelProvider
@@ -25,7 +26,7 @@ class CryptoListFragment(private var currentCurrency:String) : Fragment() {
     private lateinit var chipGroup: ChipGroup
     private lateinit var chipUsd: Chip
     private lateinit var chipRub: Chip
-
+    private lateinit var fragmentContainer: FrameLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -41,6 +42,7 @@ class CryptoListFragment(private var currentCurrency:String) : Fragment() {
         rvCryptoList = view.findViewById(R.id.rv_crypto_list)
         chipGroup = view.findViewById(R.id.chip_group)
         chipUsd =view.findViewById(R.id.chip_usd)
+        fragmentContainer =view.findViewById(R.id.fragment_inner_container)
         chipRub =view.findViewById(R.id.chip_rub)
         cryptoAdapter = CryptoAdapter(emptyList(), currentCurrency)
         rvCryptoList.layoutManager = LinearLayoutManager(requireContext())
@@ -59,12 +61,10 @@ class CryptoListFragment(private var currentCurrency:String) : Fragment() {
         }
 
         viewModel.error.observe(requireActivity()) { errorMessage ->
-
             val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
             val errorFragment = ErrorFragment (currentCurrency)
             fragmentTransaction.replace(R.id.fragment_inner_container, errorFragment)
             fragmentTransaction.commit()
-
             MainActivity.loading.visibility = View.GONE
             rvCryptoList.visibility = View.GONE
         }
