@@ -3,32 +3,30 @@
 ## Описание проекта
 MobileUpTest - это Android-приложение для отображения списка криптовалют и их детальной информации, используя CoinGecko API.
 
-## Функциональность
-- Экран со списком криптовалют с поддержкой фильтрации по валюте (USD, RUB).
-- Экран с детальной информацией о выбранной криптовалюте.
-- Обработка состояний загрузки и ошибок.
-
 ## Технологический стек
 - Kotlin
 - Single Activity
 - View
 - Retrofit
 - Moshi
+- MVVM
 - Coroutines
+- Glide
+- RecyclerView
+---
+# MobileUpTest (Test Task for Android Developer Position)
 
-## Декомпозиция задач
-1. **Создание проекта и настройка окружения**: 1.5 часа
-2. **Реализация модели данных**: 2-3 часа
-3. **Реализация API клиента**: 3-4 часа
-4. **Реализация экрана списка криптовалют**: 4-5 часов
-5. **Реализация экрана детальной информации о криптовалюте**: 4-5 часов
-6. **Тестирование приложения**: 3-4 часа
-7. **Дополнительное задание: Pull to Refresh**: 2-3 часа
-8. **Документация и финализация**: 2 часа
+## Project Description
+MobileUpTest is an Android application designed to display a list of cryptocurrencies and their detailed information using the CoinGecko API.
 
-## Запуск проекта
-1. Клонировать репозиторий.
-2. Импортировать проект в Android Studio.
-3. Запустить сборку и установить на устройство/эмулятор.
-
+## Technology Stack
+- Kotlin
+- Single Activity
+- View
+- Retrofit
+- Moshi
+- MVVM
+- Coroutines
+- Glide
+- RecyclerView
 
