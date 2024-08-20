@@ -9,7 +9,7 @@ MobileUpTest - это Android-приложение для отображения
 - View
 - Retrofit
 - Moshi
-- -MVVM
+- MVVM
 - Coroutines
 - Glide
 - RecyclerView
