@@ -65,6 +65,8 @@ class CryptoListFragment(private var currentCurrency:String) : Fragment() {
             val errorFragment = ErrorFragment (currentCurrency)
             fragmentTransaction.replace(R.id.fragment_inner_container, errorFragment)
             fragmentTransaction.commit()
+            chipUsd.isEnabled = false
+            chipRub.isEnabled = false
             MainActivity.loading.visibility = View.GONE
             rvCryptoList.visibility = View.GONE
         }
