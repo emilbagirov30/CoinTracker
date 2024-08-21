@@ -1,7 +1,7 @@
-# MobileUpTest (Тестовое задание на позицию Андроид-разработчика)
+# CoinTracker (Тестовое задание на позицию Андроид-разработчика)
 
 ## Описание проекта
-MobileUpTest - это Android-приложение для отображения списка криптовалют и их детальной информации, используя CoinGecko API.
+Android-приложение для отображения списка криптовалют и их детальной информации, используя CoinGecko API.
 
 ## Технологический стек
 - Kotlin
@@ -14,7 +14,7 @@ MobileUpTest - это Android-приложение для отображения
 - Glide
 - RecyclerView
 ---
-# MobileUpTest (Test Task for Android Developer Position)
+# CoinTracker (Test Task for Android Developer Position)
 
 ## Project Description
 MobileUpTest is an Android application designed to display a list of cryptocurrencies and their detailed information using the CoinGecko API.
